@@ -6,6 +6,6 @@ layout: default
 
 ## Yeah that's right
 
-### Nah
+### 3
 
 [New Post]({% post_url 2021-05-25-new_post %})
