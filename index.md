@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # This is my blog 
 
 ## Yeah that's right
