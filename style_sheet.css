@@ -1,0 +1,19 @@
+h1 {
+    color: white;
+    font-size: 32px;
+} 
+body {
+    background-color: #313131;
+}
+#my_div {
+    position: relative;
+    background-color : #0fd4d0;
+    width : 100px;
+    height : 100px;
+    top: 1000px;
+/*     bottom: 0px; */
+}
+#div_2 {
+    width: 1080px;
+    height: 2000px;
+}

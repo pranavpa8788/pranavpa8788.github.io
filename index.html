@@ -1,29 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
-            function set_dimension() {
-//                 alert("This is an alert");
-//                 document.getElementById('mydiv_id').style.background = '#42f5cb';
-                document.getElementById('mydiv_id').width = window.innerWidth;
-                document.getElementById('mydiv_id').height = window.innerHeight;
-                }
+        <link rel='stylesheet' href='style_sheet.css'>
+        <script src='script.js'>
         </script>
-      <!--  <style>
-            #mydiv_id {
-            background-color: #42f5cb;
-            height: 100;
-            width: 200; }
-        </style>-->
-        <meta charset='utf-8'>
-        <title>Pranav's Blog</title>
     </head>
-    <body style='background-color:#212121' onload='set_dimension()'>
-<!--         <button onclick='set_dimension()'>Click me</button> -->
-        <a href='post_1.html'>Link to new post</a>
-        <img src='wallpaper.jpg' id='mydiv_id'>
-<!--         <div class='mydiv' id='mydiv_id'> -->
-<!--             <p>This is a heading</p> -->
-<!--         <div> -->
+    <body onscroll='scroll()'>
+        <button onclick="myFunction()">Try it</button>
+        <div id='my_div'></div>
+        <div id='div_2'></div>
+<!--         <img src='wallpaper.jpg'> -->
     </body>
 </html>
