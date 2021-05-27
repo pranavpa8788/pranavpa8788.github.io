@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            function set_dimension() {
+//                 alert("This is an alert");
+//                 document.getElementById('mydiv_id').style.background = '#42f5cb';
+                document.getElementById('mydiv_id').style.width = window.innerWidth;
+                document.getElementById('mydiv_id').style.height = window.innerHeight;
+                }
+        </script>
+      <!--  <style>
+            #mydiv_id {
+            background-color: #42f5cb;
+            height: 100;
+            width: 200; }
+        </style>-->
         <meta charset='utf-8'>
-        <title>Welcome to Pranav's Blog</title>
+        <title>Pranav's Blog</title>
     </head>
-    <body>
-        <img src='wallpaper.jpg' width=1920 height=1080>
+    <body style='background-color:#212121' onload='set_dimension()'>
+<!--         <button onclick='set_dimension()'>Click me</button> -->
+        <a href='post_1.html'>Link</a>
+        <img src='wallpaper.jpg' id='mydiv_id'>
+<!--         <div class='mydiv' id='mydiv_id'> -->
+<!--             <p>This is a heading</p> -->
+<!--         <div> -->
     </body>
 </html>
