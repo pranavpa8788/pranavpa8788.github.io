@@ -6,12 +6,13 @@ body {
     background-color: #313131;
 }
 #my_div {
-    position: relative;
-    background-color : #0fd4d0;
+    position: fixed;
+/*     background-color : #0fd4d0; */
+    background-image:url('gear.png');
     width : 100px;
     height : 100px;
-    top: 1000px;
-/*     bottom: 0px; */
+/*     top: 1000px; */
+    left: 100px;
 }
 #div_2 {
     width: 1080px;
