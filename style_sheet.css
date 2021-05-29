@@ -7,6 +7,7 @@ body {
 }
 #my_div {
     position: fixed;
+    -webkit-backface-visibility: hidden;
 /*     background-color : #0fd4d0; */
     background-image:url('gear.png');
     width : 100px;
