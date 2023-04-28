@@ -1,15 +1,105 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name='viewport' content='height=device-height, width=device-width, initial-scale=1,  user-scalable=0, minimum-scale=1.0, maximum-scale=1.0'>
-        <link rel='stylesheet' href='style_sheet.css'>
-        <script src='script.js'>
-        </script>
-    </head>
-    <body onscroll='scroll()' touchmove='scroll()'>
-<!--         <button onclick="myFunction()">I'm done!!!</button> -->
-        <div id='my_div'></div>
-        <div id='div_2'></div>
-<!--         <img src='wallpaper.jpg'> -->
-    </body>
-</html>
+<head>
+	<title>Interactive Pamphlet</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		
+		.header {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			padding: 20px;
+		}
+		
+		.card {
+			background-color: #f2f2f2;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			max-width: 300px;
+			margin: 20px;
+			text-align: center;
+			font-size: 1.2rem;
+			padding: 20px;
+			border-radius: 5px;
+			transition: all 0.3s ease-out;
+		}
+		
+		.card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+		
+		.card h2 {
+			margin-top: 0;
+			font-size: 2rem;
+		}
+		
+		.card p {
+			margin: 0;
+		}
+		
+		.card img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+		}
+		
+		.card a {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			text-decoration: none;
+			border-radius: 5px;
+			display: inline-block;
+			margin-top: 20px;
+		}
+		
+		.card a:hover {
+			background-color: #2E8B57;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<h1>Interactive Pamphlet</h1>
+	</header>
+	
+	<div class="container">
+		<div class="card">
+			<h2>App Development</h2>
+			<img src="https://via.placeholder.com/200x200" alt="App Development">
+			<p>Learn how to create mobile apps for iOS and Android.</p>
+			<a href="#">Learn More</a>
+		</div>
+		
+		<div class="card">
+			<h2>Game Development</h2>
+			<img src="https://via.placeholder.com/200x200" alt="Game Development">
+			<p>Explore the world of game development and create your own games.</p>
+			<a href="#">Learn More</a>
+		</div>
+		
+		<div class="card">
+			<h2>Cybersecurity</h2>
+			<img src="https://via.placeholder.com/200x200" alt="Cybersecurity">
+			<p>Learn how to protect your online presence and become a cybersecurity expert.</p>
+			<a href="#">Learn More</a>
+		</div>
+		
+		<div class="card">
+			<h2>Dev Ops</h2>
+			<img src="https://via.placeholder.com/200x200" alt="
+
