@@ -1,105 +1,219 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Interactive Pamphlet</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			font-family: Arial, sans-serif;
-		}
-		
-		.header {
-			background-color: #4CAF50;
-			color: #fff;
-			padding: 20px;
-			text-align: center;
-		}
-		
-		.container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-around;
-			padding: 20px;
-		}
-		
-		.card {
-			background-color: #f2f2f2;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-			max-width: 300px;
-			margin: 20px;
-			text-align: center;
-			font-size: 1.2rem;
-			padding: 20px;
-			border-radius: 5px;
-			transition: all 0.3s ease-out;
-		}
-		
-		.card:hover {
-			transform: translateY(-10px);
-			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-		}
-		
-		.card h2 {
-			margin-top: 0;
-			font-size: 2rem;
-		}
-		
-		.card p {
-			margin: 0;
-		}
-		
-		.card img {
-			max-width: 100%;
-			height: auto;
-			margin-bottom: 10px;
-		}
-		
-		.card a {
-			background-color: #4CAF50;
-			color: #fff;
-			padding: 10px 20px;
-			text-decoration: none;
-			border-radius: 5px;
-			display: inline-block;
-			margin-top: 20px;
-		}
-		
-		.card a:hover {
-			background-color: #2E8B57;
-		}
-	</style>
-</head>
-<body>
-	<header class="header">
-		<h1>Interactive Pamphlet</h1>
-	</header>
-	
-	<div class="container">
-		<div class="card">
-			<h2>App Development</h2>
-			<img src="https://via.placeholder.com/200x200" alt="App Development">
-			<p>Learn how to create mobile apps for iOS and Android.</p>
-			<a href="#">Learn More</a>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Programming Resources</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+			header {
+			  background-color: #333;
+			  color: white;
+			  text-align: center;
+			  padding: 10px;
+			}
+			h1 {
+			  margin: 0;
+			  font-size: 2em;
+			}
+			.section {
+			  width: 100%;
+			  background-color: #f2f2f2;
+			  text-align: center;
+			  padding: 10px;
+			  box-sizing: border-box;
+			  cursor: pointer;
+			}
+			.subsection {
+			  <!-- display: none !important; -->
+			background-color: #ddd;
+			padding: 10px;
+			box-sizing: border-box;
+			}
+			ul {
+			  margin: 0;
+			  padding: 0;
+			}
+			li {
+			  list-style: none;
+			  margin-bottom: 5px;
+			}
+			a {
+			  color: #333;
+			  text-decoration: none;
+			  font-weight: bold;
+			}
+
+			@media (max-width: 768px) {
+			  h1 {
+				  font-size: 1.5em;
+			  }
+			}
+			.hidden {
+			  display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Programming Resources</h1>
+		</header>
+
+		<div class="section">
+			<h2>Application Development</h2>
+			<div id="appdev-subsection" class="subsection">
+				<h3>Youtube channels</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/user/TechGuyWeb">Traversy Media</a></li>
+					<li><a href="https://www.youtube.com/c/TheNetNinja">The Net Ninja</a></li>
+				</ul>
+				<h3>Online resources</h3>
+				<ul>
+					<li><a href="https://developer.android.com/">Android Developers</a></li>
+					<li><a href="https://developer.apple.com/devcenter/ios/index.action">iOS Dev Center</a></li>
+				</ul>
+			</div>
 		</div>
-		
-		<div class="card">
+
+		<div class="section">
 			<h2>Game Development</h2>
-			<img src="https://via.placeholder.com/200x200" alt="Game Development">
-			<p>Explore the world of game development and create your own games.</p>
-			<a href="#">Learn More</a>
+			<div id="gamedev-subsection" class="subsection">
+				<h3>Youtube channels</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/c/Brackeys">Brackeys</a></li>
+					<li><a href="https://www.youtube.com/channel/UCFyXA9x8lpL3EYWeYhj4C4Q">GameDevHQ</a></li>
+				</ul>
+				<h3>Online resources</h3>
+				<ul>
+					<li><a href="https://learn.unity.com/">Unity Learn</a></li>
+					<li><a href="https://docs.unrealengine.com/en-US/index.html">Unreal Engine Docs</a></li>
+				</ul>
+			</div>
 		</div>
-		
-		<div class="card">
+
+		<div class="section">
+			<h2>DevOps</h2>
+			<div id="devops-subsection" class="subsection">
+				<h3>Youtube channels</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/c/DevOpsMastery">DevOps Mastery</a></li>
+					<li><a href="https://www.youtube.com/c/AWSOnlineTechTalks">AWS Online Tech Talks</a></li>
+				</ul>
+				<h3>Online resources</h3>
+				<ul>
+					<li><a href="https://docs.docker.com/">Docker Docs</a></li>
+					<li><a href="https://kubernetes.io/docs/home/">Kubernetes Docs</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="section">
+			<h2>Web Development</h2>
+			<div id="webdev-subsection" class="subsection">
+				<h3>Youtube channels</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/c/Freecodecamp">freeCodeCamp</a></li>
+					<li><a href="https://www.youtube.com/c/TheCodingTrain">The Coding Train</a></li>
+				</ul>
+				<h3>Online resources</h3>
+				<ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web">MDN Web Docs</a></li>
+					<li><a href="https://www.w3schools.com/">W3Schools</a></li>
+
+			</div>
+		</div>
+		<div class="section">
 			<h2>Cybersecurity</h2>
-			<img src="https://via.placeholder.com/200x200" alt="Cybersecurity">
-			<p>Learn how to protect your online presence and become a cybersecurity expert.</p>
-			<a href="#">Learn More</a>
+			<div id="cybersec-subsection" class="subsection">
+				<h3>Youtube channels</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/c/CybersecurityTraining">Cybersecurity Training</a></li>
+					<li><a href="https://www.youtube.com/c/CyberMentor">The Cyber Mentor</a></li>
+				</ul>
+				<h3>Online resources</h3>
+				<ul>
+					<li><a href="https://www.cybrary.it/">Cybrary</a></li>
+					<li><a href="https://www.sans.org/">SANS Institute</a></li>
+					<li><a href="https://www.nist.gov/cyberframework">NIST Cybersecurity Framework</a></li>
+					<li><a href="https://www.owasp.org/">Open Web Application Security Project (OWASP)</a></li>
+				</ul>
+			</div>
 		</div>
-		
-		<div class="card">
-			<h2>Dev Ops</h2>
-			<img src="https://via.placeholder.com/200x200" alt="
+		<div class="section">
+			<h2>Cybersecurity</h2>
+			<div id="cybersec-subsection" class="subsection">
+				<h3>Youtube channels</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/c/CybersecurityTraining">Cybersecurity Training</a></li>
+					<li><a href="https://www.youtube.com/c/CyberMentor">The Cyber Mentor</a></li>
+				</ul>
+				<h3>Online resources</h3>
+				<ul>
+					<li><a href="https://www.cybrary.it/">Cybrary</a></li>
+					<li><a href="https://www.sans.org/">SANS Institute</a></li>
+					<li><a href="https://www.nist.gov/cyberframework">NIST Cybersecurity Framework</a></li>
+					<li><a href="https://www.owasp.org/">Open Web Application Security Project (OWASP)</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="section">
+			<h2>C</h2>
+			<div id="c-subsection" class="subsection">
+				<h3>Youtube channels</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/c/ProgrammingwithMosh">Programming with Mosh</a></li>
+					<li><a href="https://www.youtube.com/c/CS50">CS50</a></li>
+				</ul>
+				<h3>Online resources</h3>
+				<ul>
+					<li><a href="https://www.learn-c.org/">Learn-C.org</a></li>
+					<li><a href="https://www.learn-c.org/">GeeksforGeeks C Programming</a></li>
+					<li><a href="https://www.programiz.com/c-programming">Programiz C Programming</a></li>
+					<li><a href="https://www.tutorialspoint.com/cprogramming/index.htm">TutorialsPoint C Programming</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="section">
+			<h2>Java</h2>
+			<div id="java-subsection" class="subsection">
+				<h3>Youtube channels</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/channel/UCWf7JjZ3CCqKDMGjzUb7xqA">Java Brains</a></li>
+					<li><a href="https://www.youtube.com/c/Baeldung/videos">Baeldung</a></li>
+				</ul>
+				<h3>Online resources</h3>
+				<ul>
+					<li><a href="https://docs.oracle.com/javase/tutorial/">Oracle Java Tutorials</a></li>
+					<li><a href="https://www.javatpoint.com/">JavaTpoint</a></li>
+					<li><a href="https://www.codecademy.com/learn/learn-java">Codecademy Java Course</a></li>
+					<li><a href="https://www.geeksforgeeks.org/java/">GeeksforGeeks Java</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="section">
+			<h2>Extras</h2>
+			<div id="extras-subsection" class="subsection">
+				<h3>Youtube channels</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/user/Numberphile">Numberphile</a></li>
+					<li><a href="https://www.youtube.com/c/Kurzgesagt/videos">Kurzgesagt – In a Nutshell</a></li>
+				</ul>
+				<h3>Online resources</h3>
+				<ul>
+					<li><a href="https://www.khanacademy.org/">Khan Academy</a></li>
+					<li><a href="https://www.ted.com/">TED Talks</a></li>
+					<li><a href="https://www.brainpickings.org/">Brain Pickings</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+
 
